@@ -32,6 +32,15 @@ namespace StudentsApp.WinForms.Forme
         {
             lblDobrodosli.Text = $"Dobrodošli, {prijavljeniStudent}!";
             pbSlikaKorisnika.Image = ImageHelper.FromByteToImage(prijavljeniStudent.Slika);
+            UcitajProsjeke();
+        }
+
+        private void UcitajProsjeke()
+        {
+            //TODO
+            progressBar1.Minimum = 6;
+            progressBar1.Maximum = 10;
+            progressBar1.Value = 7;
         }
 
         private void btnOdjava_Click(object sender, EventArgs e)
@@ -40,6 +49,11 @@ namespace StudentsApp.WinForms.Forme
             {
                 this.Close();
             }
+        }
+
+        private void btnUrediProfil_Click(object sender, EventArgs e)
+        {
+            new frmUrediProfil(prijavljeniStudent).ShowDialog();
         }
     }
 }

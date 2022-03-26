@@ -99,11 +99,23 @@
     <Compile Include="Forme\frmPrijava.Designer.cs">
       <DependentUpon>frmPrijava.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\frmPromjenaLozinke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\frmPromjenaLozinke.Designer.cs">
+      <DependentUpon>frmPromjenaLozinke.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\frmRegistracija.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forme\frmRegistracija.Designer.cs">
       <DependentUpon>frmRegistracija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\frmUrediProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\frmUrediProfil.Designer.cs">
+      <DependentUpon>frmUrediProfil.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\ImageHelper.cs" />
     <Compile Include="Helpers\Validator.cs" />
@@ -123,6 +135,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\frmPrijava.resx">
       <DependentUpon>frmPrijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\frmPromjenaLozinke.resx">
+      <DependentUpon>frmPromjenaLozinke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\frmUrediProfil.resx">
+      <DependentUpon>frmUrediProfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

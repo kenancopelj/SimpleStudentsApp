@@ -37,14 +37,15 @@ namespace StudentsApp.WinForms.Forme
             this.label3 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pbSlikaKorisnika = new System.Windows.Forms.PictureBox();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.label5 = new System.Windows.Forms.Label();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.label6 = new System.Windows.Forms.Label();
             this.progressBar4 = new System.Windows.Forms.ProgressBar();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbSlikaKorisnika = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlikaKorisnika)).BeginInit();
             this.SuspendLayout();
@@ -81,6 +82,7 @@ namespace StudentsApp.WinForms.Forme
             this.btnUrediProfil.TabIndex = 5;
             this.btnUrediProfil.Text = "Uredi profil";
             this.btnUrediProfil.UseVisualStyleBackColor = false;
+            this.btnUrediProfil.Click += new System.EventHandler(this.btnUrediProfil_Click);
             // 
             // label2
             // 
@@ -118,27 +120,6 @@ namespace StudentsApp.WinForms.Forme
             this.label4.Size = new System.Drawing.Size(145, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "2. godina / prosjek";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Enabled = false;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 29);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(116, 98);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pbSlikaKorisnika
-            // 
-            this.pbSlikaKorisnika.Enabled = false;
-            this.pbSlikaKorisnika.Location = new System.Drawing.Point(1004, 40);
-            this.pbSlikaKorisnika.Name = "pbSlikaKorisnika";
-            this.pbSlikaKorisnika.Size = new System.Drawing.Size(134, 130);
-            this.pbSlikaKorisnika.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbSlikaKorisnika.TabIndex = 0;
-            this.pbSlikaKorisnika.TabStop = false;
             // 
             // progressBar2
             // 
@@ -191,11 +172,43 @@ namespace StudentsApp.WinForms.Forme
             this.textBox1.Size = new System.Drawing.Size(1268, 22);
             this.textBox1.TabIndex = 15;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Enabled = false;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 29);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(131, 116);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pbSlikaKorisnika
+            // 
+            this.pbSlikaKorisnika.Enabled = false;
+            this.pbSlikaKorisnika.Location = new System.Drawing.Point(1004, 40);
+            this.pbSlikaKorisnika.Name = "pbSlikaKorisnika";
+            this.pbSlikaKorisnika.Size = new System.Drawing.Size(134, 130);
+            this.pbSlikaKorisnika.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbSlikaKorisnika.TabIndex = 0;
+            this.pbSlikaKorisnika.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(437, 96);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(314, 10);
+            this.textBox2.TabIndex = 16;
+            // 
             // frmGlavna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1268, 736);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.progressBar4);
             this.Controls.Add(this.label6);
@@ -238,5 +251,6 @@ namespace StudentsApp.WinForms.Forme
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ProgressBar progressBar4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
