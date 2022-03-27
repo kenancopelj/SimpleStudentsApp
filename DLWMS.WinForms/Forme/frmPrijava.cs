@@ -32,7 +32,7 @@ namespace DLWMS.WinForms
                 }
                 else
                 {
-                    MessageBox.Show("Student ne postoji!");
+                    MessageBox.Show("Pogrešan/na broj indeksa/lozinka!");
                     txtBrojIndeksa.Clear();
                     txtLozinka.Clear();
                 }

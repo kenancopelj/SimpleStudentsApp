@@ -57,6 +57,7 @@ namespace StudentsApp.WinForms.Forme
             this.txtTrenutnaLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTrenutnaLozinka.Location = new System.Drawing.Point(15, 50);
             this.txtTrenutnaLozinka.Name = "txtTrenutnaLozinka";
+            this.txtTrenutnaLozinka.PasswordChar = '*';
             this.txtTrenutnaLozinka.Size = new System.Drawing.Size(237, 27);
             this.txtTrenutnaLozinka.TabIndex = 1;
             // 
@@ -65,6 +66,7 @@ namespace StudentsApp.WinForms.Forme
             this.txtNovaLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNovaLozinka.Location = new System.Drawing.Point(15, 128);
             this.txtNovaLozinka.Name = "txtNovaLozinka";
+            this.txtNovaLozinka.PasswordChar = '*';
             this.txtNovaLozinka.Size = new System.Drawing.Size(237, 27);
             this.txtNovaLozinka.TabIndex = 3;
             // 
@@ -83,6 +85,7 @@ namespace StudentsApp.WinForms.Forme
             this.txtNovaLozinkaPotvrda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNovaLozinkaPotvrda.Location = new System.Drawing.Point(15, 199);
             this.txtNovaLozinkaPotvrda.Name = "txtNovaLozinkaPotvrda";
+            this.txtNovaLozinkaPotvrda.PasswordChar = '*';
             this.txtNovaLozinkaPotvrda.Size = new System.Drawing.Size(237, 27);
             this.txtNovaLozinkaPotvrda.TabIndex = 5;
             // 

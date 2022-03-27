@@ -243,6 +243,7 @@ namespace StudentsApp.WinForms.Forme
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtImePrezime);
             this.Name = "frmUrediProfil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUrediProfil";
             this.Load += new System.EventHandler(this.frmUrediProfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

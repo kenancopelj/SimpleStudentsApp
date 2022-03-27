@@ -1,4 +1,5 @@
 ﻿
+using StudentsApp.WinForms.Entiteti;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -20,6 +21,7 @@ namespace DLWMS.WinForms
         public string Email { get; set; }
         public string Lozinka { get; set; }
         public bool Aktivan { get; set; }
+        public virtual List<StudentiPredmeti> Uspjeh { get; set; } = new List<StudentiPredmeti>();
         public override string ToString()
         {
             return $"{Ime} {Prezime}";

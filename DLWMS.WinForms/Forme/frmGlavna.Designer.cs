@@ -33,21 +33,29 @@ namespace StudentsApp.WinForms.Forme
             this.lblDobrodosli = new System.Windows.Forms.Label();
             this.btnOdjava = new System.Windows.Forms.Button();
             this.btnUrediProfil = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label4 = new System.Windows.Forms.Label();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.label5 = new System.Windows.Forms.Label();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
-            this.label6 = new System.Windows.Forms.Label();
-            this.progressBar4 = new System.Windows.Forms.ProgressBar();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbSlikaKorisnika = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblProsjekPrveGodine = new System.Windows.Forms.Label();
+            this.lblProsjekDrugeGodine = new System.Windows.Forms.Label();
+            this.lblProsjekTreceGodine = new System.Windows.Forms.Label();
+            this.lblUkupanProsjek = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgvPodaci = new System.Windows.Forms.DataGridView();
+            this.txtPretragaPoNazivu = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbOcjene = new System.Windows.Forms.ComboBox();
+            this.Predmet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ocjena = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DatumPolaganja = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlikaKorisnika)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPodaci)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblDobrodosli
@@ -64,9 +72,9 @@ namespace StudentsApp.WinForms.Forme
             // 
             this.btnOdjava.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnOdjava.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdjava.Location = new System.Drawing.Point(1162, 40);
+            this.btnOdjava.Location = new System.Drawing.Point(1014, 623);
             this.btnOdjava.Name = "btnOdjava";
-            this.btnOdjava.Size = new System.Drawing.Size(94, 36);
+            this.btnOdjava.Size = new System.Drawing.Size(210, 36);
             this.btnOdjava.TabIndex = 3;
             this.btnOdjava.Text = "Odjava";
             this.btnOdjava.UseVisualStyleBackColor = false;
@@ -76,91 +84,13 @@ namespace StudentsApp.WinForms.Forme
             // 
             this.btnUrediProfil.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnUrediProfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUrediProfil.Location = new System.Drawing.Point(1004, 176);
+            this.btnUrediProfil.Location = new System.Drawing.Point(1042, 192);
             this.btnUrediProfil.Name = "btnUrediProfil";
             this.btnUrediProfil.Size = new System.Drawing.Size(134, 36);
             this.btnUrediProfil.TabIndex = 5;
             this.btnUrediProfil.Text = "Uredi profil";
             this.btnUrediProfil.UseVisualStyleBackColor = false;
             this.btnUrediProfil.Click += new System.EventHandler(this.btnUrediProfil_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1000, 281);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 20);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Ukupni uspjeh";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1000, 334);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 20);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "1. godina / prosjek";
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(1004, 376);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(210, 23);
-            this.progressBar1.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1000, 418);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 20);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "2. godina / prosjek";
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(1004, 453);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(210, 23);
-            this.progressBar2.TabIndex = 10;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1000, 495);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 20);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "3. godina / prosjek";
-            // 
-            // progressBar3
-            // 
-            this.progressBar3.Location = new System.Drawing.Point(1004, 531);
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(210, 23);
-            this.progressBar3.TabIndex = 12;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1000, 571);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(188, 20);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Ukupni prosjek / prosjek";
-            // 
-            // progressBar4
-            // 
-            this.progressBar4.Location = new System.Drawing.Point(1004, 604);
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(210, 23);
-            this.progressBar4.TabIndex = 14;
             // 
             // textBox1
             // 
@@ -176,9 +106,9 @@ namespace StudentsApp.WinForms.Forme
             // 
             this.pictureBox2.Enabled = false;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 29);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 40);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(131, 116);
+            this.pictureBox2.Size = new System.Drawing.Size(116, 98);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -186,7 +116,7 @@ namespace StudentsApp.WinForms.Forme
             // pbSlikaKorisnika
             // 
             this.pbSlikaKorisnika.Enabled = false;
-            this.pbSlikaKorisnika.Location = new System.Drawing.Point(1004, 40);
+            this.pbSlikaKorisnika.Location = new System.Drawing.Point(1042, 40);
             this.pbSlikaKorisnika.Name = "pbSlikaKorisnika";
             this.pbSlikaKorisnika.Size = new System.Drawing.Size(134, 130);
             this.pbSlikaKorisnika.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,32 +133,182 @@ namespace StudentsApp.WinForms.Forme
             this.textBox2.Size = new System.Drawing.Size(314, 10);
             this.textBox2.TabIndex = 16;
             // 
+            // lblProsjekPrveGodine
+            // 
+            this.lblProsjekPrveGodine.AutoSize = true;
+            this.lblProsjekPrveGodine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProsjekPrveGodine.Location = new System.Drawing.Point(6, 79);
+            this.lblProsjekPrveGodine.Name = "lblProsjekPrveGodine";
+            this.lblProsjekPrveGodine.Size = new System.Drawing.Size(113, 20);
+            this.lblProsjekPrveGodine.TabIndex = 7;
+            this.lblProsjekPrveGodine.Text = "1. godina / 0.0";
+            // 
+            // lblProsjekDrugeGodine
+            // 
+            this.lblProsjekDrugeGodine.AutoSize = true;
+            this.lblProsjekDrugeGodine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProsjekDrugeGodine.Location = new System.Drawing.Point(6, 121);
+            this.lblProsjekDrugeGodine.Name = "lblProsjekDrugeGodine";
+            this.lblProsjekDrugeGodine.Size = new System.Drawing.Size(113, 20);
+            this.lblProsjekDrugeGodine.TabIndex = 9;
+            this.lblProsjekDrugeGodine.Text = "2. godina / 0.0";
+            // 
+            // lblProsjekTreceGodine
+            // 
+            this.lblProsjekTreceGodine.AutoSize = true;
+            this.lblProsjekTreceGodine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProsjekTreceGodine.Location = new System.Drawing.Point(6, 164);
+            this.lblProsjekTreceGodine.Name = "lblProsjekTreceGodine";
+            this.lblProsjekTreceGodine.Size = new System.Drawing.Size(113, 20);
+            this.lblProsjekTreceGodine.TabIndex = 11;
+            this.lblProsjekTreceGodine.Text = "3. godina / 0.0";
+            // 
+            // lblUkupanProsjek
+            // 
+            this.lblUkupanProsjek.AutoSize = true;
+            this.lblUkupanProsjek.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUkupanProsjek.Location = new System.Drawing.Point(6, 204);
+            this.lblUkupanProsjek.Name = "lblUkupanProsjek";
+            this.lblUkupanProsjek.Size = new System.Drawing.Size(156, 20);
+            this.lblUkupanProsjek.TabIndex = 13;
+            this.lblUkupanProsjek.Text = "Ukupni prosjek / 0.0";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.cmbOcjene);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.txtPretragaPoNazivu);
+            this.groupBox2.Controls.Add(this.dgvPodaci);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(12, 151);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(968, 508);
+            this.groupBox2.TabIndex = 20;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Podaci o položenim ispitima:";
+            // 
+            // dgvPodaci
+            // 
+            this.dgvPodaci.AllowUserToAddRows = false;
+            this.dgvPodaci.AllowUserToDeleteRows = false;
+            this.dgvPodaci.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPodaci.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Predmet,
+            this.Ocjena,
+            this.DatumPolaganja});
+            this.dgvPodaci.GridColor = System.Drawing.Color.DimGray;
+            this.dgvPodaci.Location = new System.Drawing.Point(7, 78);
+            this.dgvPodaci.Name = "dgvPodaci";
+            this.dgvPodaci.ReadOnly = true;
+            this.dgvPodaci.RowHeadersWidth = 51;
+            this.dgvPodaci.RowTemplate.Height = 24;
+            this.dgvPodaci.Size = new System.Drawing.Size(955, 443);
+            this.dgvPodaci.TabIndex = 0;
+            // 
+            // txtPretragaPoNazivu
+            // 
+            this.txtPretragaPoNazivu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPretragaPoNazivu.Location = new System.Drawing.Point(201, 37);
+            this.txtPretragaPoNazivu.Name = "txtPretragaPoNazivu";
+            this.txtPretragaPoNazivu.Size = new System.Drawing.Size(396, 24);
+            this.txtPretragaPoNazivu.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 20);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Pretraži po predmetu:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(621, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 20);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Pretraži po ocjeni:";
+            // 
+            // cmbOcjene
+            // 
+            this.cmbOcjene.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbOcjene.FormattingEnabled = true;
+            this.cmbOcjene.Location = new System.Drawing.Point(787, 36);
+            this.cmbOcjene.Name = "cmbOcjene";
+            this.cmbOcjene.Size = new System.Drawing.Size(175, 26);
+            this.cmbOcjene.TabIndex = 23;
+            // 
+            // Predmet
+            // 
+            this.Predmet.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Predmet.DataPropertyName = "Predmet";
+            this.Predmet.HeaderText = "Predmet";
+            this.Predmet.MinimumWidth = 6;
+            this.Predmet.Name = "Predmet";
+            this.Predmet.ReadOnly = true;
+            // 
+            // Ocjena
+            // 
+            this.Ocjena.DataPropertyName = "Ocjena";
+            this.Ocjena.HeaderText = "Ocjena";
+            this.Ocjena.MinimumWidth = 6;
+            this.Ocjena.Name = "Ocjena";
+            this.Ocjena.ReadOnly = true;
+            this.Ocjena.Width = 125;
+            // 
+            // DatumPolaganja
+            // 
+            this.DatumPolaganja.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DatumPolaganja.DataPropertyName = "DatumPolaganja";
+            this.DatumPolaganja.HeaderText = "DatumPolaganja";
+            this.DatumPolaganja.MinimumWidth = 6;
+            this.DatumPolaganja.Name = "DatumPolaganja";
+            this.DatumPolaganja.ReadOnly = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblProsjekPrveGodine);
+            this.groupBox1.Controls.Add(this.lblProsjekDrugeGodine);
+            this.groupBox1.Controls.Add(this.lblUkupanProsjek);
+            this.groupBox1.Controls.Add(this.lblProsjekTreceGodine);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(1004, 262);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(240, 355);
+            this.groupBox1.TabIndex = 21;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Uspjeh:";
+            // 
             // frmGlavna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1268, 736);
+            this.ClientSize = new System.Drawing.Size(1268, 684);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.progressBar4);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.progressBar3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.progressBar2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnUrediProfil);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnOdjava);
             this.Controls.Add(this.lblDobrodosli);
             this.Controls.Add(this.pbSlikaKorisnika);
             this.Name = "frmGlavna";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGlavna";
             this.Load += new System.EventHandler(this.frmGlavna_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlikaKorisnika)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPodaci)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,16 +321,21 @@ namespace StudentsApp.WinForms.Forme
         private System.Windows.Forms.Button btnOdjava;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnUrediProfil;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ProgressBar progressBar2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ProgressBar progressBar3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ProgressBar progressBar4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lblProsjekPrveGodine;
+        private System.Windows.Forms.Label lblProsjekDrugeGodine;
+        private System.Windows.Forms.Label lblProsjekTreceGodine;
+        private System.Windows.Forms.Label lblUkupanProsjek;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dgvPodaci;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtPretragaPoNazivu;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbOcjene;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Predmet;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ocjena;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DatumPolaganja;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

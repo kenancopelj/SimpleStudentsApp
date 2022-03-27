@@ -102,6 +102,8 @@
   <ItemGroup>
     <Compile Include="DB\StudentsDB.cs" />
     <Compile Include="DB\KonekcijaNaBazu.cs" />
+    <Compile Include="Entiteti\Predmet.cs" />
+    <Compile Include="Entiteti\StudentiPredmeti.cs" />
     <Compile Include="Forme\frmGlavna.cs">
       <SubType>Form</SubType>
     </Compile>

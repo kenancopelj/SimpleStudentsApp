@@ -49,7 +49,7 @@ namespace DLWMS.WinForms
             this.btnPrijava.Location = new System.Drawing.Point(73, 396);
             this.btnPrijava.Name = "btnPrijava";
             this.btnPrijava.Size = new System.Drawing.Size(116, 47);
-            this.btnPrijava.TabIndex = 0;
+            this.btnPrijava.TabIndex = 2;
             this.btnPrijava.Text = "Prijava";
             this.btnPrijava.UseVisualStyleBackColor = true;
             this.btnPrijava.Click += new System.EventHandler(this.btnPrijava_Click);
@@ -59,7 +59,7 @@ namespace DLWMS.WinForms
             this.txtBrojIndeksa.Location = new System.Drawing.Point(73, 246);
             this.txtBrojIndeksa.Name = "txtBrojIndeksa";
             this.txtBrojIndeksa.Size = new System.Drawing.Size(307, 22);
-            this.txtBrojIndeksa.TabIndex = 1;
+            this.txtBrojIndeksa.TabIndex = 0;
             // 
             // label1
             // 
@@ -97,7 +97,7 @@ namespace DLWMS.WinForms
             this.txtLozinka.Name = "txtLozinka";
             this.txtLozinka.PasswordChar = '*';
             this.txtLozinka.Size = new System.Drawing.Size(307, 22);
-            this.txtLozinka.TabIndex = 5;
+            this.txtLozinka.TabIndex = 1;
             // 
             // button2
             // 
@@ -105,7 +105,7 @@ namespace DLWMS.WinForms
             this.button2.Location = new System.Drawing.Point(209, 396);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(171, 47);
-            this.button2.TabIndex = 6;
+            this.button2.TabIndex = 3;
             this.button2.Text = "Registracija";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -127,6 +127,7 @@ namespace DLWMS.WinForms
             this.Controls.Add(this.btnPrijava);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPrijava";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prijava";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.err)).EndInit();
