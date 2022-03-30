@@ -1,6 +1,7 @@
 ﻿using DLWMS.WinForms;
 using DLWMS.WinForms.DB;
 using DLWMS.WinForms.Helpers;
+using DLWMS.WinForms.P5;
 using StudentsApp.WinForms.Entiteti;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace StudentsApp.WinForms.Forme
     {
         private Student prijavljeniStudent;
         KonekcijaNaBazu baza = StudentsDB.Baza;
+        private List<string> Ocjene = new List<string>() {"", "6", "7", "8", "9", "10" };
 
         public frmGlavna()
         {
@@ -54,12 +56,6 @@ namespace StudentsApp.WinForms.Forme
 
         private void RacunajProsjeke(List<StudentiPredmeti> rezultat)
         {
-            var prosjekPrveGodine = Math.Round(rezultat.Where(x => x.GodinaStudija == 1).Average(x => (double?)x.Ocjena).GetValueOrDefault(),2);
-            lblProsjekPrveGodine.Text = $"1.godina / {prosjekPrveGodine}";
-            var prosjekDrugeGodine = Math.Round(rezultat.Where(x => x.GodinaStudija == 2).Average(x => (double?)x.Ocjena).GetValueOrDefault(), 2);
-            lblProsjekDrugeGodine.Text = $"2.godina / {prosjekDrugeGodine}";
-            var prosjekTreceGodine = Math.Round(rezultat.Where(x => x.GodinaStudija == 3).Average(x => (double?)x.Ocjena).GetValueOrDefault(), 2);
-            lblProsjekTreceGodine.Text = $"3.godina / {prosjekTreceGodine}";
             var ukupanProsjek = Math.Round(rezultat.Average(x => (double?)x.Ocjena).GetValueOrDefault(), 2);
             lblUkupanProsjek.Text = $"Ukupan prosjek / {ukupanProsjek}";
 
@@ -76,6 +72,26 @@ namespace StudentsApp.WinForms.Forme
         private void btnUrediProfil_Click(object sender, EventArgs e)
         {
             new frmUrediProfil(prijavljeniStudent).ShowDialog();
+        }
+
+        private void txtPretragaPoNazivu_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtPretragaPoNazivu.Text))
+            {
+                var podaci = prijavljeniStudent.Uspjeh.Where(x => x.Predmet.Naziv.ToLower().Contains(txtPretragaPoNazivu.Text)).ToList();
+                UcitajPodatke(podaci);
+            }
+            else
+                UcitajPodatke();
+        }
+        private void btnPrikaziPredmete_Click(object sender, EventArgs e)
+        {
+            new frmPrikazPredmeta(prijavljeniStudent).ShowDialog();
+        }
+
+        private void btnRaspored_Click(object sender, EventArgs e)
+        {
+            new frmRaspored(prijavljeniStudent).ShowDialog();
         }
     }
 }

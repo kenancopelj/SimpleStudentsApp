@@ -21,6 +21,9 @@ namespace DLWMS.WinForms.DB
         public DbSet<Student> Studenti { get; set; }
         public DbSet<Predmet> Predmeti { get; set; }
         public DbSet<StudentiPredmeti> StudentiPredmeti { get; set; }
+        public DbSet<GodineStudija> GodineStudija { get; set; }
+        public DbSet<Spolovi> Spolovi { get; set; }
+        public DbSet<Smjerovi> Smjerovi { get; set; }
        
     }
 }

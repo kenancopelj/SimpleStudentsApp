@@ -59,7 +59,7 @@ namespace StudentsApp.WinForms.Forme
             this.txtImePrezime.Name = "txtImePrezime";
             this.txtImePrezime.ReadOnly = true;
             this.txtImePrezime.Size = new System.Drawing.Size(236, 27);
-            this.txtImePrezime.TabIndex = 0;
+            this.txtImePrezime.TabIndex = 1;
             // 
             // label1
             // 
@@ -77,7 +77,7 @@ namespace StudentsApp.WinForms.Forme
             this.btnPromijeniSliku.Location = new System.Drawing.Point(27, 288);
             this.btnPromijeniSliku.Name = "btnPromijeniSliku";
             this.btnPromijeniSliku.Size = new System.Drawing.Size(199, 37);
-            this.btnPromijeniSliku.TabIndex = 3;
+            this.btnPromijeniSliku.TabIndex = 5;
             this.btnPromijeniSliku.Text = "Promijeni sliku";
             this.btnPromijeniSliku.UseVisualStyleBackColor = true;
             this.btnPromijeniSliku.Click += new System.EventHandler(this.btnPromijeniSliku_Click);
@@ -88,7 +88,7 @@ namespace StudentsApp.WinForms.Forme
             this.btnSpasi.Location = new System.Drawing.Point(280, 440);
             this.btnSpasi.Name = "btnSpasi";
             this.btnSpasi.Size = new System.Drawing.Size(121, 37);
-            this.btnSpasi.TabIndex = 4;
+            this.btnSpasi.TabIndex = 6;
             this.btnSpasi.Text = "Spasi";
             this.btnSpasi.UseVisualStyleBackColor = true;
             this.btnSpasi.Click += new System.EventHandler(this.btnSpasi_Click);
@@ -99,7 +99,7 @@ namespace StudentsApp.WinForms.Forme
             this.btnOdustani.Location = new System.Drawing.Point(407, 440);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(121, 37);
-            this.btnOdustani.TabIndex = 5;
+            this.btnOdustani.TabIndex = 7;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
             this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
@@ -131,7 +131,7 @@ namespace StudentsApp.WinForms.Forme
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.ReadOnly = true;
             this.txtEmail.Size = new System.Drawing.Size(236, 27);
-            this.txtEmail.TabIndex = 10;
+            this.txtEmail.TabIndex = 3;
             // 
             // label5
             // 
@@ -151,7 +151,7 @@ namespace StudentsApp.WinForms.Forme
             this.txtLozinka.PasswordChar = '*';
             this.txtLozinka.ReadOnly = true;
             this.txtLozinka.Size = new System.Drawing.Size(236, 27);
-            this.txtLozinka.TabIndex = 12;
+            this.txtLozinka.TabIndex = 4;
             // 
             // label6
             // 
@@ -180,7 +180,7 @@ namespace StudentsApp.WinForms.Forme
             this.txtIndeks.Name = "txtIndeks";
             this.txtIndeks.ReadOnly = true;
             this.txtIndeks.Size = new System.Drawing.Size(236, 27);
-            this.txtIndeks.TabIndex = 15;
+            this.txtIndeks.TabIndex = 0;
             // 
             // txtDatumRodjenja
             // 
@@ -189,7 +189,7 @@ namespace StudentsApp.WinForms.Forme
             this.txtDatumRodjenja.Name = "txtDatumRodjenja";
             this.txtDatumRodjenja.ReadOnly = true;
             this.txtDatumRodjenja.Size = new System.Drawing.Size(236, 27);
-            this.txtDatumRodjenja.TabIndex = 8;
+            this.txtDatumRodjenja.TabIndex = 2;
             // 
             // openFileDialog1
             // 
@@ -206,7 +206,7 @@ namespace StudentsApp.WinForms.Forme
             this.linkLabel1.Location = new System.Drawing.Point(404, 400);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(125, 18);
-            this.linkLabel1.TabIndex = 17;
+            this.linkLabel1.TabIndex = 8;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Promijeni lozinku:";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -244,7 +244,7 @@ namespace StudentsApp.WinForms.Forme
             this.Controls.Add(this.txtImePrezime);
             this.Name = "frmUrediProfil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmUrediProfil";
+            this.Text = "Uredi profil";
             this.Load += new System.EventHandler(this.frmUrediProfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlika)).EndInit();

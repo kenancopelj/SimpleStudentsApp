@@ -16,6 +16,6 @@ namespace StudentsApp.WinForms.Entiteti
         public virtual Predmet Predmet { get; set; }
         public int Ocjena { get; set; }
         public string DatumPolaganja { get; set; }
-        public int GodinaStudija { get; set; }
+        public virtual GodineStudija GodinaStudija { get; set; }
     }
 }

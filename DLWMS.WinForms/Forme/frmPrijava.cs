@@ -57,5 +57,10 @@ namespace DLWMS.WinForms
             return Validator.ValidirajKontrolu(txtBrojIndeksa, err, Poruke.ObaveznaVrijednost)
                 && Validator.ValidirajKontrolu(txtLozinka, err, Poruke.ObaveznaVrijednost);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new frmRegistracija().ShowDialog();
+        }
     }
 }

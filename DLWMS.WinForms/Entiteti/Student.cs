@@ -12,7 +12,8 @@ namespace DLWMS.WinForms
     {
         public int Id { get; set; }
         public string Indeks { get; set; }
-        public int GodinaStudija { get; set; }
+        public virtual GodineStudija GodinaStudija { get; set; }
+        public virtual Spolovi Spol { get; set; }
         // public Image Slika { get; set; }
         public byte[] Slika { get; set; }
         public string Ime { get; set; }
@@ -21,6 +22,7 @@ namespace DLWMS.WinForms
         public string Email { get; set; }
         public string Lozinka { get; set; }
         public bool Aktivan { get; set; }
+        public virtual Smjerovi Smjer { get; set; }
         public virtual List<StudentiPredmeti> Uspjeh { get; set; } = new List<StudentiPredmeti>();
         public override string ToString()
         {

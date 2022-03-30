@@ -102,7 +102,10 @@
   <ItemGroup>
     <Compile Include="DB\StudentsDB.cs" />
     <Compile Include="DB\KonekcijaNaBazu.cs" />
+    <Compile Include="Entiteti\GodineStudija.cs" />
     <Compile Include="Entiteti\Predmet.cs" />
+    <Compile Include="Entiteti\Smjerovi.cs" />
+    <Compile Include="Entiteti\Spolovi.cs" />
     <Compile Include="Entiteti\StudentiPredmeti.cs" />
     <Compile Include="Forme\frmGlavna.cs">
       <SubType>Form</SubType>
@@ -116,11 +119,23 @@
     <Compile Include="Forme\frmPrijava.Designer.cs">
       <DependentUpon>frmPrijava.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\frmPrikazPredmeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\frmPrikazPredmeta.Designer.cs">
+      <DependentUpon>frmPrikazPredmeta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\frmPromjenaLozinke.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forme\frmPromjenaLozinke.Designer.cs">
       <DependentUpon>frmPromjenaLozinke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\frmRaspored.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\frmRaspored.Designer.cs">
+      <DependentUpon>frmRaspored.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\frmRegistracija.cs">
       <SubType>Form</SubType>
@@ -153,8 +168,17 @@
     <EmbeddedResource Include="Forme\frmPrijava.resx">
       <DependentUpon>frmPrijava.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\frmPrikazPredmeta.resx">
+      <DependentUpon>frmPrikazPredmeta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\frmPromjenaLozinke.resx">
       <DependentUpon>frmPromjenaLozinke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\frmRaspored.resx">
+      <DependentUpon>frmRaspored.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\frmRegistracija.resx">
+      <DependentUpon>frmRegistracija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\frmUrediProfil.resx">
       <DependentUpon>frmUrediProfil.cs</DependentUpon>

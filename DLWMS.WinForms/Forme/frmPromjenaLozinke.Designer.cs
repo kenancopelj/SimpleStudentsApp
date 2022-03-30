@@ -59,7 +59,7 @@ namespace StudentsApp.WinForms.Forme
             this.txtTrenutnaLozinka.Name = "txtTrenutnaLozinka";
             this.txtTrenutnaLozinka.PasswordChar = '*';
             this.txtTrenutnaLozinka.Size = new System.Drawing.Size(237, 27);
-            this.txtTrenutnaLozinka.TabIndex = 1;
+            this.txtTrenutnaLozinka.TabIndex = 0;
             // 
             // txtNovaLozinka
             // 
@@ -68,7 +68,7 @@ namespace StudentsApp.WinForms.Forme
             this.txtNovaLozinka.Name = "txtNovaLozinka";
             this.txtNovaLozinka.PasswordChar = '*';
             this.txtNovaLozinka.Size = new System.Drawing.Size(237, 27);
-            this.txtNovaLozinka.TabIndex = 3;
+            this.txtNovaLozinka.TabIndex = 1;
             // 
             // label2
             // 
@@ -87,7 +87,7 @@ namespace StudentsApp.WinForms.Forme
             this.txtNovaLozinkaPotvrda.Name = "txtNovaLozinkaPotvrda";
             this.txtNovaLozinkaPotvrda.PasswordChar = '*';
             this.txtNovaLozinkaPotvrda.Size = new System.Drawing.Size(237, 27);
-            this.txtNovaLozinkaPotvrda.TabIndex = 5;
+            this.txtNovaLozinkaPotvrda.TabIndex = 2;
             // 
             // label3
             // 
@@ -106,7 +106,7 @@ namespace StudentsApp.WinForms.Forme
             this.btnSpasi.Location = new System.Drawing.Point(16, 258);
             this.btnSpasi.Name = "btnSpasi";
             this.btnSpasi.Size = new System.Drawing.Size(105, 36);
-            this.btnSpasi.TabIndex = 6;
+            this.btnSpasi.TabIndex = 3;
             this.btnSpasi.Text = "Spasi";
             this.btnSpasi.UseVisualStyleBackColor = false;
             this.btnSpasi.Click += new System.EventHandler(this.btnSpasi_Click);
@@ -118,7 +118,7 @@ namespace StudentsApp.WinForms.Forme
             this.btnOdustani.Location = new System.Drawing.Point(128, 258);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(124, 36);
-            this.btnOdustani.TabIndex = 7;
+            this.btnOdustani.TabIndex = 4;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = false;
             // 
@@ -140,6 +140,7 @@ namespace StudentsApp.WinForms.Forme
             this.Controls.Add(this.txtTrenutnaLozinka);
             this.Controls.Add(this.label1);
             this.Name = "frmPromjenaLozinke";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Promjena lozinke";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);

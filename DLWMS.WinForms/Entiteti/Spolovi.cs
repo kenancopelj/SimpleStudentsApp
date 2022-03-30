@@ -7,15 +7,10 @@ using System.Threading.Tasks;
 
 namespace StudentsApp.WinForms.Entiteti
 {
-    [Table("Predmeti")]
-    public class Predmet
+    [Table("Spolovi")]
+    public class Spolovi
     {
         public int Id { get; set; }
         public string Naziv { get; set; }
-        public virtual GodineStudija GodinaStudija { get; set; }
-        public override string ToString()
-        {
-            return Naziv;
-        }
     }
 }
