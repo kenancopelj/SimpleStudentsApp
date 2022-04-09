@@ -1,3 +1,3 @@
 # StudentsApp
 
-Simple C# .NET application for students management system.
+Basic C# .NET app for student management system.
